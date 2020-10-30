@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Weather Station</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: #4ddf30;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        h1 {
+            color: #8e1916;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 40px;
+            margin-top: -10px;
+        }
+        
+        .card {
+            height: 180px;
+            width: 300px;
+            color: black;
+            font-size: 30px;
+            /* padding: 10%; */
+            padding-right: 40px;
+            padding-left: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 300ms;
+            /* border: 2px solid #35bb1b; */
+            box-shadow: 31px 31px 62px #44c42a, -31px -31px 62px #3ae917;
+        }
+        
+        .card:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: scale(1.15);
+            transition: 300ms;
+            border: none;
+        }
+        
+        .temp {
+            color: #8e1916;
+            padding-top: 5px;
+            visibility: hidden;
+        }
+        
+        .visible {
+            visibility: visible;
+        }
+        
+        tr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        td {
+            padding: 30px;
+        }
+        
+        .small {
+            font-size: 12px;
+        }
+        
+        .btn {
+            width: 100px;
+            height: 100px;
+            /* padding: 5px; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-size: 18px;
+            color: #4ddf30;
+            border-radius: 50px;
+            background-color: white;
+            border: none;
+            font-weight: 700;
+            transition: 300ms;
+            margin-left: auto;
+            margin-right: -20%;
+        }
+        
+        .btn:hover {
+            padding: 5px;
+            border-radius: 50px;
+            font-size: 18px;
+            color: white;
+            background-color: #4ddf30;
+            border: 2px solid rgb(255, 253, 253);
+            font-weight: 600;
+            transition: 300ms;
+            transform: scale(1.1);
+        }
+        
+        .md-48 {
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mini Weather Station</h1>
+        <table style="margin-top: 80px; margin-bottom: 50px;">
+            <tr>
+                <td>
+                    <div class="card">
+                        Temperature <small class="small">(in celcius)</small><span id="holder1" class="temp">25<span>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="card">
+                        Humidity <small class="small">(in g.m-3)</small><span id="holder2" class="temp">12<span>
+                    </div>
+                </td>
+
+            </tr>
+                
+
+
+            
+            
+        </table>
+        <span class="btn" id="btn">
+            <i class="material-icons md-48">refresh</i>
+        </span>
+
+
+                    </div>
+                    <script src="script.js"></script>
+</body>
+
+
+</html>
